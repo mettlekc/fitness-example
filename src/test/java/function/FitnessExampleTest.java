@@ -98,7 +98,7 @@ public class FitnessExampleTest {
     }
 
     private String removeMagicNumber(String expectedResult) {
-        return expectedResult.replaceAll("[-]*\\d+", "");
+        return expectedResult.replaceAll("[-]|\\r|\\d+", "");
     }
 
     @Test
